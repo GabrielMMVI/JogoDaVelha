@@ -4,4 +4,34 @@
              x:Class="JogoDaVelha.MainPage">
 
 
+    <ContentPage.Background>
+
+        <LinearGradientBrush StartPoint="1,0" EndPoint="0,1">
+            <GradientStop Color="Blue" Offset="0.3" />
+            <GradientStop Color="Green" Offset="0.7" />
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+    <Grid 
+        RowDefinitions="*, *, *, *" 
+        ColumnDefinitions="*, *, *, *"
+        ColumnSpacing="10"
+        RowSpacing="10"
+        Margin="10">
+        
+        <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Text="Jogo da velha"/>
+        <!-- Fisrt Row -->
+        <Button Grid.Row="1" Grid.Column="0"/>
+        <Button Grid.Row="1" Grid.Column="1"/>
+        <Button Grid.Row="1" Grid.Column="2"/>
+        <!-- Second Row-->
+        <Button Grid.Row="2" Grid.Column="0"/>
+        <Button Grid.Row="2" Grid.Column="1"/>
+        <Button Grid.Row="2" Grid.Column="2"/>
+        <!--Third Row -->
+        <Button Grid.Row="3" Grid.Column="0"/>
+        <Button Grid.Row="3" Grid.Column="1"/>
+        <Button Grid.Row="3" Grid.Column="2"/>
+
+    </Grid>
 </ContentPage>
